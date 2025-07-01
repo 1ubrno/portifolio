@@ -7,12 +7,17 @@
 body{
     background-color:#BAB7AE ;
 }
-
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 .nav-container{
     display: flex;
     align-items: center;
     padding-left: 40vh;
     gap: 100px;
+    border: #000;
+    border-bottom: 1px solid black;
 }
 
 nav {
@@ -32,6 +37,22 @@ nav {
     color: #000;
 }
 
+a {
+    text-decoration: none;
+    color: #C16A57;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* Responsividade */
 @media (max-width: 768px) {
     .menu-toggle {
@@ -40,9 +61,8 @@ nav {
 
     nav {
         display: none;
-        flex-direction: column;
+        flex-direction:row ;
         gap: 15px;
-        text-align: center;
     }
 
     nav.active {
@@ -50,8 +70,9 @@ nav {
     }
 
     .nav-container {
-        flex-direction: column;
-        padding: 20px;
-        gap: 10px;
+       display: flex;
+       justify-content: flex-end;
+       gap: 20px;
+       padding: 10px;
     }
 }
