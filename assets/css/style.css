@@ -8,3 +8,56 @@ body {
     background-color: #000319;
     color: #FFFFFF;
 }
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    box-shadow: 1px 1px 5px #00000075;
+    background: #ffffff05;
+    border-radius: 13px;
+    width: 60vh;
+    height: 10vh;
+    padding-top: 3vh;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    font-style: none;
+    color :#FFFFFF;
+    text-decoration: none;
+}
+
+nav a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 0; /* garante espaço para o ponto */
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0; /* encosta na base do link */
+    left: 50%;
+    transform: translateX(-50%) translateY(100%); /* move para fora da linha do texto */
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover::after {
+    opacity: 1;
+}
