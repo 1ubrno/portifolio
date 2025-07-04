@@ -61,3 +61,43 @@ nav a::after {
 nav a:hover::after {
     opacity: 1;
 }
+main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+#s1 {
+    
+    width: 60%;
+    height: 50%;
+    text-align: center;
+    padding-top: 50px;
+    padding: 30px;
+    gap: 20px;
+}
+
+#s1 p {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 50;
+      letter-spacing: 5px;
+      font-size: smaller;
+      padding: 20px;
+}
+
+#s1 h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8vh;
+    font-weight: bold;
+    
+}
+
+ #s1 button{
+    box-shadow: 1px 1px 5px #4f4f4f75;
+    background: #ffffff05;
+    border-radius: 13px;
+    width: 20vh;
+    height: 6vh;
+    color: #FFFFFF;
+    cursor: pointer;
+}
