@@ -18,19 +18,19 @@ body {
 
 nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
     box-shadow: 1px 1px 5px #00000075;
     background: #ffffff05;
-    border-radius: 13px;
-    width: 60vh;
+    border-radius: 35px;
+    width: 55vh;
     height: 10vh;
-    padding-top: 3vh;
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 nav a {
     font-style: none;
+    font-size: large;
     color :#FFFFFF;
     text-decoration: none;
 }
@@ -63,7 +63,10 @@ nav a:hover::after {
 }
 main {
     display: flex;
+    
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     padding: 20px;
 
 }
